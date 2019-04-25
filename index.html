@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estude no Instituto Educacional Iraci Veiga!</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-png">
+	    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<!-- HTML5 shim and Respond.js para suporte dos elementos HTML5 e das media queries ao IE8 -->
+	<!-- Atenção: Respond.js não funciona em páginas carregadas com uso do protocolo file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="description" content="Página da web destinada a oferecer oportunidades e informações de treinamentos na cidade de jacareí e região" >
+	<meta name="keywords" content="estuda jacareí, escola, empregabilidade, cursos, jacareí, treinamento, excel, ingles, informática, enem, preparatorio, militar">
+	<meta property="og:url" content="http://www.iraciveiga.com.br/" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Estude no Instituto Educacional Iraci Veiga" />
+	<meta property="og:description" content="Precisa de qualificação para recolocação no mercado ou primeiro emprego?" />
+	<meta property="og:image" content="facebook_post.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="icons/font-awesome/css/all.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>    
+        <script src="jquery/jquery.js"> </script>
+        <script src="bootstrap/js/bootstrap.js"> </script>
+        <script src="scripts.js"></script>
+    </head>
+    <body>   
+        <!-- Conteúdo da Página -->
+        <div class="container-fluid">
+
+            <div class="row m-3 text-center d-flex align-items-center">
+                <div class="col-md-12">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+            <div class="row fundo-azul-claro" id="form">
+                &nbsp;
+            </div>
+        </div>
+        <div class="container-fluid bg-image p-3 m-0">
+            <div class="row m-3">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="fundo-branco transparente p-4">
+                        <h1 class="text-center paleta-darkblue destaque">
+                            <!-- TÍTULO PRINCIPAL -->
+                            UMA CHAMADA BONITA PARA A PROMOÇÃO
+                        </h1>
+                        <h3 class="text-center text-uppercase">
+                            <!-- SUBTÍTULO -->
+                            Cadastre-se agora e obtenha o seu benefício da promoção!
+                        </h3>
+                        <div class="text-center p-1">
+                            <a href="#more" class="nounderline">
+                                <!-- Botão que leva para informações da promoção -->
+                                <p class="m-0 p-0 font-weight-bold paleta-red ">SAIBA MAIS</p> 
+                                <i class="paleta-red bounce fas fa-angle-down fa-4x"> </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4 fundo-azul p-3">
+                        <form action="send.php" method="POST">
+                            <div class="form-row">
+                                <div class="form-group col-8">
+                                    <label for="inputName" class="h5 paleta-white" >Nome*</label>
+                                    <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Nome Completo" required>                                
+                                </div>
+                                <div class="form-group col-4">
+                                        <label for="inputAge" class="h5 paleta-white">Idade</label>
+                                        <input type="text" class="form-control" id="inputAge" name="inputAge" placeholder="Idade">                                
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="inputPhone" class="h5 paleta-white">Telefone*</label>
+                                    <input type="text" class="form-control" id="inputPhone" name="inputPhone" placeholder="Telefone Fixo ou WhatsApp (com DDD)" required>                                
+                                </div>
+                            </div>                            
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="inputEmail" class="h5 paleta-white">E-mail</label>
+                                    <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="E-mail">
+                                </div>
+                            </div>   
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="area_selection" class="h5 paleta-white">Área de Interesse*</label>
+                                    <select class="form-control" id="area_selection" name="area_selection" required>
+                                        <option value="Área de Interesse" selected="selected">Área de Interesse</option>
+                                        <!--Opções de Cursos no Formulário -->
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>   
+                            <div class="form-group row text-center">
+                                <div class="col">
+                                    <button type="submit" value="send_data" id="enviar" class="botao h6">OBTER DESCONTO</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="text-center paleta-white">Campos com asterisco (*) são obrigatórios</p>
+                    </div>
+            </div>
+        </div>    
+        <div class="container-fluid" id="more">
+            <div class="row fundo-azul-claro">
+                &nbsp;
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center m-3">
+                <div class="col-md-12">
+                    <h1>
+                        <!-- se quiser colocar um título maior na promoção, colocar abaixo dessa linha -->
+                    </h1> 
+                </div>
+            </div>
+            <div class="row m-3">
+                <div class="col-md-4 text-right text-sm-center d-flex align-items-center">
+                    <h3>
+                        <!-- Título da Promoção. Aparecerá ao lado da Descrição da Promoção e Regras -->
+                        TÍTULO DA PROMOÇÃO
+                    </h3>
+                </div>
+                <div class="col-md-8">
+                    <p class="text-justify">
+                        <!-- Descrição e Regras da Promoção -->
+                        <strong>Regras e Detalhes da Promoção </strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="text-center m-3">
+                        <!-- Botão Chamada para ação -->
+                        <a href="#form" class="botao nounderline h6">QUERO DESCONTO</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center m-3">
+                <div class="col-md-12">
+                    <h1>
+                        <!-- Título Institucional -->
+                        O INSTITUTO EDUCACIONAL IRACI VEIGA
+                    </h1>                    
+                </div>
+            </div>
+            <div class="row text-center m-3">
+                <div class="col-md-6">
+                    <img src="img/certificado.png" class="img-fluid" style="width:70%">
+                </div>
+                <div class="col-md-6">
+                    <div class="text-justify">
+                        <p>
+                            <!-- TEXTO NOSSOS CURSOS -->
+                            O Insituto Educacional Iraci Veiga oferece diversos cursos visando o aperfeiçoamento pessoal, profissional e acadêmico dos
+                            alunos. Os cursos oferecidos abrangem: Cursos Preparatórios para Concursos Públicos e Vestibulares
+                            em todos os níveis, cursos de Idiomas, Treinamentos diversos em tecnologia como Informática Básica, Microsoft Office do básico 
+                            ao avançado e muito mais! Em todos os cursos são oferecidos certificados de conclusão como método de reconhecimento 
+                            da conclusão do conteúdo estudado.
+                        </p>
+                    </div>
+                    <div class="text-center m-4">
+                            <a href="https://www.iraciveiga.com.br/nossos-cursos/" target="_blank" class=" botao nounderline h6">NOSSOS CURSOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center m-3">
+                <div class="col-md-6 order-md-0 order-sm-1">
+                    <div class="text-justify">
+                        <p>
+                            <!-- TEXTO INSTITUCIONAL -->
+                            O Instituto Educacional Iraci Veiga conta com uma infraestrutura que oferece aos alunos o que há de melhor na hora do
+                            aprendizado: Ambiente descontraído e completo, com salas climatizadas e equipamentos de ponta. Uma equipe de gestão 
+                            com anos de experiência em educação, e com qualificação de excelência. Dentre os professores estão mestres e doutores 
+                            que trazem todo o seu conhecimento para compartilhar com os alunos.
+                        </p>
+                    </div>
+                    <div class="text-center m-4">
+                        <a href="https://www.iraciveiga.com.br/sobre-nos-2/" target="_blank" class="botao nounderline h6">SOBRE NÓS</a>
+                    </div>
+                </div>
+                <div class="col-md-6 order-md-1 order-sm-0">
+                    <img src="img/escola.jpg" class="img-fluid rounded" style="width:70%">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <hr>
+                <div class="row m-3 p-3">
+                    <div class="col-md-12 text-center">
+                        <h1 class="">
+                            <!--Título da faixa Chamada para a Ação -->
+                            FAÇA O CURSO QUE DESEJA NUM PREÇO ACESSÍVEL
+                        </h1>
+                        <h5 class="">
+                            <!-- Subtítulo da faixa de chamada para a ação -->
+                            Obtenha até 90% de desconto em qualquer curso se cadastrando agora!
+                        </h5>
+                        <div class="text-center mt-4 mb-3">
+                            <!-- Outro botão de chamada para a ação -->
+                            <a href="#form" class="botao nounderline h6">QUERO DESCONTO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé com Copyright-->
+        <div class="jumbotron down text-center">
+            Instituto Educacional Iraci Veiga © <script type="text/javascript">document.write(new Date().getFullYear());</script> | Todos os Direitos Reservados
+        </div>
+        <i class="fas fa-angle-up fa-3x paleta-white fundo-azul-claro pt-1 pb-1 pl-3 pr-3 rounded" id="myBtn" onclick="topFunction()" title="Voltar ao Topo"></i>
+    
+    </body>
+</html>
